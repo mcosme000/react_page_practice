@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./Components/Header";
+import Slider from "./Components/Slider";
+import Sidebar from "./Components/Sidebar";
+import Articulos from "./Components/Articulos";
+import Footer from "./Components/Footer";
 
-function App() {
+import ArticuloData from "./Components/ArticuloData";
+export default function App() {
+  const articleData = ArticuloData.map((article) => {
+    return <Articulos title={article.title} img={article.img} />;
+  });
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Slider />
+
+      <div className="main container">
+        <section className="article-container">{articleData}</section>
+        <Sidebar />
+      </div>
+      <Footer />
     </div>
   );
 }
-
-export default App;
