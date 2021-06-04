@@ -5,21 +5,21 @@ import Sidebar from "./Components/Sidebar";
 import Articulos from "./Components/Articulos";
 import Footer from "./Components/Footer";
 
-import ArticuloData from "./Components/ArticuloData";
+//ROUTER
+import Router from "./Router";
+
 export default function App() {
-  const articleData = ArticuloData.map((article) => {
-    return <Articulos title={article.title} img={article.img} />;
-  });
   return (
     <div className="App">
       <Header />
       <Slider />
 
       <div className="main container">
-        <section className="article-container">{articleData}</section>
+        <section className="article-container">
+          <Router />
+        </section>
         <Sidebar />
       </div>
-      <Footer />
     </div>
   );
 }

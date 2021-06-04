@@ -1,21 +1,16 @@
 import React from "react";
+import Articulo from "./Articulo";
+import Data from "./ArticuloData";
 
 class Articulos extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      contador: 0,
-    };
-  }
-
   render() {
+    const data = Data.map((article) => {
+      return <Articulo article={article} />;
+    });
     return (
-      <div className="article">
-        <h2 className="article-title">{this.props.title}</h2>
-        <img src={this.props.img} alt="programming" />
-        <a href="#" className="article-btn">
-          Read more
-        </a>
+      <div>
+        <h1>Our articles</h1>
+        {data}
       </div>
     );
   }
