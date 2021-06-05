@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 class Header extends React.Component {
   render() {
@@ -9,11 +10,8 @@ class Header extends React.Component {
             <h1>Learn React</h1>
           </div>
           <nav className="navbar">
-            <a href="#">Inicio</a>
-            <a href="#">Blog</a>
-            <a href="#">Formulario</a>
-            <a href="#">Pagina1</a>
-            <a href="#">Pagina2</a>
+            <NavLink to="/">Inicio</NavLink>
+            <NavLink to="/ruta-prueba">Prueba</NavLink>
           </nav>
         </div>
       </div>

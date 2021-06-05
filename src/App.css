@@ -24,7 +24,6 @@ p {
 }
 h1 {
   font-size: 40px;
-  margin-bottom: 20px;
 }
 img {
   width: 100%;
@@ -32,6 +31,13 @@ img {
 
 .container {
   width: 80%;
+}
+
+.title {
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgb(207, 207, 207);
+  margin-bottom: 20px;
 }
 
 /* - - - HEADER - - - */

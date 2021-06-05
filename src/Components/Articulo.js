@@ -7,9 +7,7 @@ class Articulo extends React.Component {
       <div className="article">
         <h2 className="article-title">{title}</h2>
         <img src={img} alt="programming" />
-        <a href="#" className="article-btn">
-          Read more
-        </a>
+        <button className="article-btn">Read more </button>
       </div>
     );
   }
