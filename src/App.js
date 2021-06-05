@@ -7,6 +7,7 @@ import Articulos from "./Components/Articulos";
 //ROUTER
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Prueba from "./Components/Prueba";
+import Contacto from "./Components/Contacto";
 
 export default function App() {
   return (
@@ -22,6 +23,9 @@ export default function App() {
               </Route>
               <Route exact path="/ruta-prueba">
                 <Prueba />
+              </Route>
+              <Route exact path="/contacto">
+                <Contacto />
               </Route>
             </Switch>
           </section>

@@ -37,7 +37,6 @@ img {
   padding-bottom: 20px;
   text-align: center;
   border-bottom: 1px solid rgb(207, 207, 207);
-  margin-bottom: 20px;
 }
 
 /* - - - HEADER - - - */
@@ -105,13 +104,11 @@ img {
 .article-container {
   width: 100%;
   padding: 20px 0px;
-  margin-bottom: 20px;
   text-align: left;
 }
 
 .article {
   padding: 20px 0px;
-  margin-bottom: 20px;
   border-bottom: 1px solid var(--primary);
 }
 

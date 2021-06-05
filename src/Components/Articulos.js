@@ -8,10 +8,10 @@ class Articulos extends React.Component {
       return <Articulo article={article} />;
     });
     return (
-      <React.Fragment>
+      <div>
         <h1 className="title">Our articles</h1>
-        {data}
-      </React.Fragment>
+        <div className="article-container">{data}</div>
+      </div>
     );
   }
 }
